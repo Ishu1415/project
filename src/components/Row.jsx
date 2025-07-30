@@ -6,7 +6,7 @@ import "./Row.css";
 
 const base_url = "https://image.tmdb.org/t/p/original/";
 
-function Row({ title, fetchUrl, isLargeRow }) {
+ function Row({ title, fetchUrl, isLargeRow }) {
   const [movies, setMovies] = useState([]);
   const [trailerUrl, setTrailerUrl] = useState("");
 
@@ -55,6 +55,4 @@ function Row({ title, fetchUrl, isLargeRow }) {
     </div>
   );
 }
-export default Row;
-
-
+export default Row

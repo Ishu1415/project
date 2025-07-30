@@ -35,7 +35,4 @@ import "./MovieDetails.css";
     </div>
   );
 }
-export default MovieDetails
-
-
-
+export default MovieDetails

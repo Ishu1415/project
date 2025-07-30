@@ -1,0 +1,29 @@
+/* src/pages/FavouriteList.css */
+.favouriteList {
+  background-color: black;
+  min-height: 100vh;
+  padding-top: 80px; /* space below fixed navbar */
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.favourite-heading {
+  color: white;
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.favouriteGrid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.no-fav {
+  color: gray;
+  text-align: center;
+  font-size: 1.2rem;
+}

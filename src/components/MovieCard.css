@@ -1,4 +1,4 @@
-  .movieCard {
+  /* .movieCard {
   width: 150px;
   background-color: #222;
   border-radius: 5px;
@@ -31,4 +31,38 @@
 .movieCard_info p {
   font-size: 10px;
  opacity:0.7;
-}  
+}   */
+
+
+
+
+
+
+
+
+.movie-card {
+  position: relative;
+  width: 200px;
+  transition: transform 0.3s;
+}
+
+.movie-card img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.heart-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 22px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: white;
+  text-shadow: 1px 1px 2px black;
+}
+
+.heart-icon:hover {
+  transform: scale(1.2);
+}
