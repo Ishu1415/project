@@ -1,0 +1,43 @@
+.searchbar {
+  margin: 20px;
+  text-align: center;
+}
+
+.searchbar input {
+  padding: 8px;
+  width: 250px;
+  border: none;
+  border-radius: 3px;
+}
+
+.searchbar button {
+  padding: 8px 12px;
+  margin-left: 5px;
+  background-color: red;
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.searchbar button:hover {
+  background-color: darkred;
+}
+
+.search_results {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.search_item {
+  margin: 5px;
+  text-align: center;
+  color: white;
+}
+
+.search_item img {
+  width: 100px;
+  border-radius: 5px;
+}

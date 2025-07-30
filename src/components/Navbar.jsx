@@ -1,0 +1,25 @@
+import React, { useState, useEffect } from "react";
+
+import "./Navbar.css";
+
+function Navbar() {
+  const [show, setShow] = useState(false);
+
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      setShow(window.scrollY > 100);
+    });
+    return () => window.removeEventListener("scroll", null);
+  }, []);
+
+  return (
+    <div className={`navbar ${show && "nav_black"}`}>
+      <img className="nav_logo" src="data:image/png;base64,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" alt="Netflix" />
+
+      <img className="nav_avatar" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmX1IYrleu5pZkTWvD6cBrp4E0knysir8f-A&s" alt="User" />
+    
+    </div>
+  );
+}
+
+export default Navbar;
